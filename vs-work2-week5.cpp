@@ -3,31 +3,25 @@
 using namespace std;
 
 int main() {
-	int x = -1, total = 0;
-	char temp[9999] = { 0 }, cptemp[9999] = { 0 };
-	cout << "請輸入一整數:";
-	cin >> temp;
+	int x;
+	char c;
+	string temp;
+	cout << "請輸入有幾疊牌:";
+	cin >> x;
+	string tile[52][52] ;
 	
-	for (int i = 0; i < 9998; i++) {
-		if (temp[i] != 0) {
-			cptemp[i] = temp[i];
-		//	cout << "temp[" << i << "]=" << temp[i]<<endl;
-		//	cout << "cptemp[" << i << "]=" << cptemp[i] << endl;
-			x++;
+	for (int i = 1 ; i <= x; i++) {
+		
+		cout << "請輸入第" << i << "疊牌:";
+		for (int j = 0; j < 52; j++) {
+
 		}
 	}
 
-	int cpx = x;
-	for (int i = 0; i < x; i++) {
-		if (cptemp[cpx] == temp[i]) {
-			total++;
-			cpx--;
+	for(int i = 1; i <= x; i++) {
+		for (int j = 0; j < 52; j++) {
+			cout << tile[i][j] << endl;
 		}
-	}
-
-	if (total == x) {
-		cout << "是" << endl;
-	}else {
-		cout << "否" << endl;
+		
 	}
 }
